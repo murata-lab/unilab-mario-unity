@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{FE03A4CB-6B33-79D8-F74D-72C83971DC8D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CharaControl.cs">
+    <Files>
+      <File FileName="Assets/CharaControl.cs" Line="63" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ashizawanatsuki_scrollaction" expanded="True">
+            <Node name="Assets" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cf280156-cdea-4eb5-b35d-adce9faa643e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

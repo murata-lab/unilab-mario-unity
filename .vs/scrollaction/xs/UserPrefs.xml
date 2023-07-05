@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{C3FC4A56-15FD-FA38-A4A0-C4796D05714C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CharaControl.cs">
+    <Files>
+      <File FileName="Assets/Script/CharaControl.cs" Line="13" Column="33" />
+      <File FileName="Assets/Script/StageManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/ButtonHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/UDP.cs" Line="44" Column="30" />
+      <File FileName="Assets/Script/BeforeGame.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="scrollaction" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Script" expanded="True">
+                <Node name="CharaControl.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8f6944b2-e7d3-4fc6-8a4f-f397a0238fcf" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
