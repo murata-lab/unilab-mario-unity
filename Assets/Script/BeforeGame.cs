@@ -5,21 +5,9 @@ using UnityEngine;
 
 public class BeforeGame : MonoBehaviour
 {
-
+    // ゲーム前の画面を表示
     public void LoadFirstStage()
     {
         SceneManager.LoadScene("stage01");
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

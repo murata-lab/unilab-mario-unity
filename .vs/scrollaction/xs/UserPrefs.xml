@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CharaControl.cs">
     <Files>
       <File FileName="Assets/Script/CharaControl.cs" Line="13" Column="33" />
-      <File FileName="Assets/Script/StageManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/ButtonHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/UDP.cs" Line="44" Column="30" />
+      <File FileName="Assets/Script/StageManager.cs" />
+      <File FileName="Assets/Script/ButtonHandler.cs" />
+      <File FileName="Assets/Script/UDP.cs" />
       <File FileName="Assets/Script/BeforeGame.cs" />
     </Files>
     <Pads>
@@ -23,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8f6944b2-e7d3-4fc6-8a4f-f397a0238fcf" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b48ab242-ba1d-47fb-8ea3-727501f076d7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

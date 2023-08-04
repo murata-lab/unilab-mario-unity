@@ -5,7 +5,6 @@ public class ButtonHandler : MonoBehaviour
 {
     private StageManager stageManager;
 
-
     private void Start()
     {
         stageManager = FindObjectOfType<StageManager>();
@@ -18,6 +17,6 @@ public class ButtonHandler : MonoBehaviour
 
     public void QuitGame()
     {
-        stageManager.LoadFirstStage();
+        SceneManager.LoadScene("BeforeGame");
     }
 }

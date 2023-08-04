@@ -15,7 +15,6 @@ public class UDP : MonoBehaviour
     int i = 0;
     public CharaControl charaControl;
 
-    // Use this for initialization
     void Start()
     {
         int LOCA_LPORT = 50007;
@@ -23,37 +22,35 @@ public class UDP : MonoBehaviour
         udp = new UdpClient(LOCA_LPORT);
         udp.Client.ReceiveTimeout = 2000;
 
-        // CharaControlスクリプトの参照を取得
         charaControl = GameObject.Find("Player").GetComponent<CharaControl>();
+
+        charaControl.StopMoving();
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         IPEndPoint remoteEP = null;
         byte[] data = udp.Receive(ref remoteEP);
-        string text = Encoding.UTF8.GetString(data);  // 受信した信号
+        string text = Encoding.UTF8.GetString(data);
         Debug.Log("signal: " + text);
 
         // 受信した信号に基づいてキャラクターの操作を行う
+        // 0:とまれ, 1:すすめ, 2:戻れ, 3:ジャンプ
         if (text == "0")
         {
-            //　停止
+            charaControl.StopMoving();
         }
         else if (text == "1")
         {
-            //  進む
             charaControl.MoveForward();
         }
         else if (text == "2")
         {
-            //　戻る
             charaControl.MoveBackward();
         }
         else if (text == "3")
         {
-            // ジャンプ
             charaControl.Jump();
         }
     }

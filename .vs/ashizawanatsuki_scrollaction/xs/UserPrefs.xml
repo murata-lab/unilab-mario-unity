@@ -1,8 +1,5 @@
-﻿<Properties StartupConfiguration="{FE03A4CB-6B33-79D8-F74D-72C83971DC8D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CharaControl.cs">
-    <Files>
-      <File FileName="Assets/CharaControl.cs" Line="63" Column="22" />
-    </Files>
+﻿<Properties StartupConfiguration="{C3FC4A56-15FD-FA38-A4A0-C4796D05714C}|">
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -15,7 +12,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cf280156-cdea-4eb5-b35d-adce9faa643e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b48ab242-ba1d-47fb-8ea3-727501f076d7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
