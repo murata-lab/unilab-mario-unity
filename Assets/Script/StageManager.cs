@@ -11,6 +11,7 @@ public class StageManager : MonoBehaviour
         int nextStageIndex = currentStageIndex + 1;
         SceneManager.LoadScene(stageScenes[nextStageIndex]);
     }
+    
 
     // 何かあった時用のボタン操作
     void Update()

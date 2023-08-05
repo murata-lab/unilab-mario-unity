@@ -368,6 +368,7 @@
 "Assets/Script/BeforeGame.cs"
 "Assets/Script/ButtonHandler.cs"
 "Assets/Script/CharaControl.cs"
+"Assets/Script/ReStart.cs"
 "Assets/Script/StageManager.cs"
 "Assets/Script/UDP.cs"
 -langversion:9.0

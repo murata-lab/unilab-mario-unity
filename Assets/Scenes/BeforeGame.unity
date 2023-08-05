@@ -957,6 +957,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_back
       objectReference: {fileID: 0}
+    - target: {fileID: 4073972382361765371, guid: 57c34f6348dfd4d008fd7ab27ff50ab5,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1168001970}
+    - target: {fileID: 4073972382361765371, guid: 57c34f6348dfd4d008fd7ab27ff50ab5,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8492582787082099279, guid: 57c34f6348dfd4d008fd7ab27ff50ab5,
         type: 3}
       propertyPath: m_Pivot.x

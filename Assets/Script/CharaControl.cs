@@ -7,7 +7,7 @@ public class CharaControl : MonoBehaviour
 {
 
     public int speed = 10;
-    public float jumpForce;
+    public float jumpForce = 50;
     public LayerMask groundlayer;
     public bool isJumping = true;
     public GameObject mainCamera;
@@ -20,28 +20,6 @@ public class CharaControl : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
-
-    private void FixedUpdate()
-    {
-        // カメラの追従
-        if (transform.position.x > mainCamera.transform.position.x - 4)
-        {
-            Vector3 cameraPos = mainCamera.transform.position;
-            cameraPos.x = transform.position.x + 4;
-            mainCamera.transform.position = cameraPos;
-        }
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-        Vector2 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, min.x + 0.5f, max.x);
-        transform.position = pos;
-
-        // ジャンプ中かつ速度が0以下（＝頂点）のとき重力スケールを増加
-        if (!isJumping && rb.velocity.y <= 2.0)
-        {
-            rb.gravityScale = 15.0f;
-        }
-    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -143,6 +121,28 @@ public class CharaControl : MonoBehaviour
             rb.velocity = jumpVelocity;
             rb.gravityScale = 5.0f;
             isJumping = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        // カメラの追従
+        if (transform.position.x > mainCamera.transform.position.x - 4)
+        {   
+            Vector3 cameraPos = mainCamera.transform.position;
+            cameraPos.x = transform.position.x + 4;
+            mainCamera.transform.position = cameraPos;
+        }
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        Vector2 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, min.x + 0.5f, max.x);
+        transform.position = pos;
+
+        // ジャンプ中かつ速度が0以下（＝頂点）のとき重力スケールを増加
+        if (!isJumping && rb.velocity.y <= 2.0)
+        {
+            rb.gravityScale = 20.0f;
         }
     }
 }
