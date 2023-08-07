@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class CharaControl : MonoBehaviour
 {
 
-    public int speed = 10;
-    public float jumpForce = 50;
+    private int speed = 10;
+    private float jumpForce = 100;
     public LayerMask groundlayer;
     public bool isJumping = true;
     public GameObject mainCamera;
@@ -100,29 +100,7 @@ public class CharaControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); 
         anim = GetComponent<Animator>();
     }
-
-    void Update()
-    {
-        float x = Input.GetAxis("Horizontal");
-
-        if (x != 0)
-        {
-            Move(x);
-            anim.SetBool("Dash", true);
-        }
-        else
-        {
-            anim.SetBool("Dash", false);
-        }
-
-        if (isJumping && Input.GetKeyDown(KeyCode.Space))
-        {
-            Vector2 jumpVelocity = new Vector2(speed, jumpForce);
-            rb.velocity = jumpVelocity;
-            rb.gravityScale = 5.0f;
-            isJumping = false;
-        }
-    }
+    
 
     private void FixedUpdate()
     {
@@ -139,10 +117,30 @@ public class CharaControl : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x, min.x + 0.5f, max.x);
         transform.position = pos;
 
+        float x = Input.GetAxis("Horizontal");
+
+        if (x != 0)
+        {
+            Move(x);
+            anim.SetBool("Dash", true);
+        }
+        else
+        {
+            anim.SetBool("Dash", false);
+        }
+
         // ジャンプ中かつ速度が0以下（＝頂点）のとき重力スケールを増加
         if (!isJumping && rb.velocity.y <= 2.0)
         {
             rb.gravityScale = 20.0f;
+        }
+
+        if (isJumping && Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector2 jumpVelocity = new Vector2(speed, jumpForce);
+            rb.velocity = jumpVelocity;
+            rb.gravityScale = 2.0f;
+            isJumping = false;
         }
     }
 }
